@@ -15,7 +15,7 @@
   - Using Ultra96 PYNQ or equivalent install, git "sudo apt install git"
   - git clone https://github.com/focalplane/Ultra96-click.git
 
-**For SPI bus Mickroe LED ring R Click board with PYNQ:**
+**For SPI bus Mikro LED ring R Click board with PYNQ:**
   - To attach click board, POWER DOWN ULTRA96 BOARD: "sudo shutdown -h now", then UNPLUG power!
   - Attach LED ring R Click board in slot that is assocated with /dev/spidev0.1
   - Boot up, ssh with user: xilinx, password: xilinx
