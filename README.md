@@ -1,10 +1,11 @@
-## This stuff is for tinkering with the Mickroe Click boards from the Avnet/Xilinx Ultra96 Python  environment (also works with Ultra96 PYNQ)
+## This stuff is for tinkering with the Mikro Click boards from the Avnet/Xilinx Ultra96 Python  environment (also works with Ultra96 PYNQ)
 
 **Pre-requisites:**
-  - Existing /dev/spidevx.x devices
-  - User permission of devices! ("sudo chmod a+rwx /dev/spidev?.?", chown or the right way with adduser to existing group spi or sudo)
-  - Python with pip installed
-  - Relevant Click boards
+  - Ultra96 PYNQ preferred or at least some version of PetaLinux
+  - Existing /dev/spidevx.x or /dev/i2c-x devices
+  - User permission of devices! ("sudo chmod a+rwx /dev/spidev?.?", chown or the right way with adduser to existing group spi or sudo or su)
+  - Python3 with pip3 installed (can work with Python 2 if you know what you are doing)
+  - Relevant Click hardware boards
 
 **How to install and use PYNQ:**
   - How-to video and instructions: https://ultra96-pynq.readthedocs.io/en/latest/getting_started.html
@@ -15,7 +16,7 @@
   - Using Ultra96 PYNQ or equivalent install, git "sudo apt install git"
   - git clone https://github.com/focalplane/Ultra96-click.git
 
-**Attaching the click boards:**
+**Attaching the Mikro Click boards:**
   - To attach click board, POWER DOWN ULTRA96 BOARD: "sudo shutdown -h now", then UNPLUG power!
   - Attach Click mezzanine board with Click board installed in appropriate slot
   - Power on and boot up, ssh with user: xilinx, password: xilinx then use the boards
