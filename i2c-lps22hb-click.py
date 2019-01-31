@@ -5,19 +5,20 @@ import smbus  # Must sudo apt install python3-smbus !
 # This will minipulate a ST LPS22HB Click in Slot 1
 # of the Ultra96 mikro click mezzanine board 
 
-# Obtain the reset pin of slot 1 of the Ultra96 mikro mezzanine board
-# PS pin MIO37 is connected to slot 1 RST
-# PS pin MIO40 is connected to slot 2 RST
+## Obtain the reset pin of slot 1 of the Ultra96 mikro mezzanine board
+# PS pin EMIO2 is connected to slot 1 RST
+# PS pin EMIO3 is connected to slot 2 RST
 
 # Linux pin number to Xilinx pin numbers are weird and have a large
 # base number than can change between different releases of Linux
-# The pynq base fcn will help here!  base for 2018.2 was 338
-#
+# The pynq base fcn will help here!
+#mio_linux_number = GPIO.get_gpio_base() + 37
+
 # EMIOs start after MIO and there
 # is fixed offset for ZYNQ (54) and ZYNQ US+ (78)
-#   emio_linux_number = GPIO.get_gpio_pin(emio_offset)
+emio_linux_number = GPIO.get_gpio_base() + 78 + 2
 
-rst_pin = GPIO(GPIO.get_gpio_base() + 37, 'out')
+rst_pin = GPIO(emio_linux_number, 'out')
 
 # Convert signed into unsigned from i2c read byte
 def i2c_read_byte(i2c, DA, DR):
