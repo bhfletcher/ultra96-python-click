@@ -14,7 +14,7 @@
 **Github for Python with Mikro Click boards:**
   - Boot up, ssh into your PYNQ/PetaLinux distribution for Ultra96
   - Using Ultra96 PYNQ or equivalent install, git "sudo apt install git"
-  - git clone https://github.com/focalplane/Ultra96-python-click.git
+  - git clone https://github.com/focalplane/ultra96-python-click.git
 
 **Attaching the Mikro Click boards:**
   - To attach click board, POWER DOWN ULTRA96 BOARD: "sudo shutdown -h now", then UNPLUG power!
