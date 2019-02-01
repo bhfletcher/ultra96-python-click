@@ -7,12 +7,11 @@ import spidev
 
 # Obtain the reset pin of slot 1 of the Ultra96 mikro mezzanine board
 # PS pin EMIO2 is connected to slot 1 RST
-# PS pin EMIO3 is connected to slot 2 RST
+# PS pin EMIO9 is connected to slot 2 RST
 
 # Linux pin number to Xilinx pin numbers are weird and have a large
 # base number than can change between different releases of Linux
 # The pynq base fcn will help here!
-#mio_linux_number = GPIO.get_gpio_base() + 37
 
 # EMIOs start after MIO and there
 # is fixed offset for ZYNQ (54) and ZYNQ US+ (78)

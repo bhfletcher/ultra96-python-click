@@ -7,7 +7,7 @@ import smbus  # Must sudo apt install python3-smbus !
 
 ## Obtain the reset pin of slot 1 of the Ultra96 mikro mezzanine board
 # PS pin EMIO2 is connected to slot 1 RST
-# PS pin EMIO3 is connected to slot 2 RST
+# PS pin EMIO9 is connected to slot 2 RST
 
 # Linux pin number to Xilinx pin numbers are weird and have a large
 # base number than can change between different releases of Linux
